@@ -2,10 +2,13 @@
 FROM mysql:latest
 
 # Environment variables for MySQL configuration
-ENV MYSQL_ROOT_PASSWORD=1234
-ENV MYSQL_DATABASE=app_db
-ENV MYSQL_USER=app_user
-ENV MYSQL_PASSWORD=1234
+   ### As its specified in setting.py file we have ENV as a default so we can specify them in docekr compose for reusability
+ENV ENGINE="default"
+ENV NAME="default"
+ENV USER="default"
+ENV PASSWORD="default"
+ENV HOST="default"
+ENV PORT="default"
 
 # Expose port 3306 for MySQL connections
 EXPOSE 3306
