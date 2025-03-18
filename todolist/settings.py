@@ -67,7 +67,7 @@ DATABASES = {
         'USER': os.environ.get("USER", ""),             ###   is using has to be updated to
         'PASSWORD': os.environ.get ("PASSWORD", ""),
         'HOST': os.environ.get("HOST", ""),
-        'PORT': os.environ.get ("MYSQL_DB_POR", ""),  # Leave this empty to use the default MySQL port (3306).
+        'PORT': os.environ.get ("PORT", ""),  # Leave this empty to use the default MySQL port (3306).
     }
 }
 
